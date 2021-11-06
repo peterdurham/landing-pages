@@ -120,7 +120,7 @@ const FoldHeader = styled.div`
     position: absolute;
     left: 290px;
     top: 290px;
-    animation: FloatUpAndDown infinite;
+    animation: FloatUpAndDown 5s infinite;
   }
   & .FloatingBitcoin {
     left: 390px;
