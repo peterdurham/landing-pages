@@ -4,6 +4,19 @@ import { Link } from "react-router-dom";
 import FoldLogo from "../assets/fold/fold_logo.png";
 import VisaFold from "../assets/fold/visa_fold.png";
 import FoldCard from "../assets/fold/fold_card.png";
+import FloatingBitcoin from "../assets/fold/floating_bitcoin.png";
+import FloatingBitcoin2 from "../assets/fold/floating_bitcoin2.png";
+import FloatingBlur from "../assets/fold/floating_blur.png";
+import FloatingBlur2 from "../assets/fold/floating_blur2.png";
+import FloatingBlur3 from "../assets/fold/floating_blur3.png";
+import FloatingBlur4 from "../assets/fold/floating_blur4.png";
+import FloatingBolt from "../assets/fold/floating_bolt.png";
+import FloatingCoin from "../assets/fold/floating_coin.png";
+import FloatingCoin2 from "../assets/fold/floating_coin2.png";
+import FloatingCoins from "../assets/fold/floating_coins.png";
+import FloatingPresent from "../assets/fold/floating_present.png";
+import FloatingRadish from "../assets/fold/floating_radish.png";
+import FloatingSpin from "../assets/fold/floating_spin.png";
 import styled from "styled-components";
 
 const FoldPage = styled.div`
@@ -64,6 +77,114 @@ const FoldHeader = styled.div`
   & .bottom-header {
     margin: 0 0 10px;
   }
+  & .card-phone-container {
+    width: 415px;
+    margin: 20px auto 0;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  & .fold-card {
+    width: 335px;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    z-index: 2;
+  }
+  & video {
+    width: 230px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  & .header-text {
+    max-width: 430px;
+    font-size: 18px;
+    line-height: 25px;
+    padding-top: 460px;
+  }
+  @keyframes FloatUpAndDown {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  & .floating {
+    width: 49px;
+    position: absolute;
+    left: 290px;
+    top: 290px;
+    animation: FloatUpAndDown infinite;
+  }
+  & .FloatingBitcoin {
+    left: 390px;
+    top: 290px;
+  }
+  & .FloatingBitcoin2 {
+    left: 1210px;
+    top: 440px;
+    width: 61px;
+  }
+  & .FloatingBlur {
+    left: 190px;
+    top: 330px;
+    width: 74px;
+  }
+  & .FloatingBlur2 {
+    left: 1170px;
+    top: 150px;
+    width: 64px;
+  }
+  & .FloatingBlur3 {
+    left: 1320px;
+    top: 490px;
+    width: 99px;
+  }
+  & .FloatingBlur4 {
+    left: 430px;
+    top: 150px;
+    width: 99px;
+  }
+  & .FloatingBolt {
+    left: 1120px;
+    top: 290px;
+    width: 75px;
+  }
+  & .FloatingCoin {
+    left: 1320px;
+    top: 290px;
+    width: 75px;
+  }
+  & .FloatingCoin2 {
+    left: 520px;
+    top: 570px;
+    width: 69px;
+  }
+  & .FloatingCoins {
+    left: 430px;
+    top: 470px;
+    width: 54px;
+  }
+  & .FloatingPresent {
+    left: 530px;
+    top: 340px;
+    width: 59px;
+  }
+  & .FloatingRadish {
+    left: 1090px;
+    top: 590px;
+    width: 69px;
+  }
+  & .FloatingSpin {
+    left: 310px;
+    top: 620px;
+  }
 `;
 
 function Fold() {
@@ -83,20 +204,91 @@ function Fold() {
           <img src={VisaFold} className="fold-visa" alt="visa fold" />
           <h1 className="top-header">Earn Bitcoin On</h1>
           <h1 className="bottom-header">Everything</h1>
-          <img src={FoldCard} alt="fold card" />
-          <video
-            class="spin-phone"
-            autoplay=""
-            width="230px"
-            height="auto"
-            muted=""
-          >
-            <source
-              src="https://thumbs.gfycat.com/FastElaborateIslandwhistler-mobile.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the HTML5 Video element.
-          </video>
+          <div className="card-phone-container">
+            <img src={FoldCard} className="fold-card" alt="fold card" />
+            <video
+              class="spin-phone"
+              autoplay=""
+              width="230px"
+              height="auto"
+              muted=""
+            >
+              <source
+                src="https://thumbs.gfycat.com/FastElaborateIslandwhistler-mobile.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the HTML5 Video element.
+            </video>
+            <div className="header-text">
+              Win up to 100% back on every purchase.* Every swipe is a chance to
+              win a whole bitcoin.†
+            </div>
+          </div>
+          <img
+            src={FloatingBitcoin}
+            alt="floating-bitcoin"
+            className="floating FloatingBitcoin"
+          />
+          <img
+            src={FloatingBitcoin2}
+            alt="floating-bitcoin2"
+            className="floating FloatingBitcoin2"
+          />
+          <img
+            src={FloatingBlur}
+            alt="FloatingBlur"
+            className="floating FloatingBlur"
+          />
+          <img
+            src={FloatingBlur2}
+            alt="FloatingBlur2"
+            className="floating FloatingBlur2"
+          />
+          <img
+            src={FloatingBlur3}
+            alt="FloatingBlur3"
+            className="floating FloatingBlur3"
+          />
+          <img
+            src={FloatingBlur4}
+            alt="FloatingBlur4"
+            className="floating FloatingBlur4"
+          />
+          <img
+            src={FloatingBolt}
+            alt="FloatingBolt"
+            className="floating FloatingBolt"
+          />
+          <img
+            src={FloatingCoin}
+            alt="FloatingCoin"
+            className="floating FloatingCoin"
+          />
+          <img
+            src={FloatingCoin2}
+            alt="FloatingCoin2"
+            className="floating FloatingCoin2"
+          />
+          <img
+            src={FloatingCoins}
+            alt="FloatingCoins"
+            className="floating FloatingCoins"
+          />
+          <img
+            src={FloatingPresent}
+            alt="FloatingPresent"
+            className="floating FloatingPresent"
+          />
+          <img
+            src={FloatingRadish}
+            alt="FloatingRadish"
+            className="floating FloatingRadish"
+          />
+          <img
+            src={FloatingSpin}
+            alt="FloatingSpin"
+            className="floating FloatingSpin"
+          />
         </FoldHeader>
       </FoldContainer>
     </FoldPage>
