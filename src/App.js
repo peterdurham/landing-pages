@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import styled from "styled-components";
 import logo from "./logo.svg";
@@ -26,10 +26,6 @@ function App() {
       </AppStyles>
     </Router>
   );
-}
-
-function Home() {
-  return <div>Home page</div>;
 }
 
 function CreateReactApp() {

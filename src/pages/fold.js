@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import FoldLogo from "../assets/fold/fold_logo.png";
 import VisaFold from "../assets/fold/visa_fold.png";
 import FoldCard from "../assets/fold/fold_card.png";
@@ -32,6 +34,8 @@ const FoldNavLinks = styled.ul`
     margin: 0 15px 20px;
     padding: 34px 0 10px;
     font-weight: 700;
+    color: black;
+    text-decoration: none;
   }
 `;
 
@@ -66,20 +70,20 @@ function Fold() {
   return (
     <FoldPage>
       <FoldNav>
-        <img src={FoldLogo} />
+        <img src={FoldLogo} alt="fold logo" />
         <FoldNavLinks>
-          <a>Debit Card</a>
-          <a>Compare Plans</a>
-          <a>Support</a>
-          <a>Get The App</a>
+          <Link to="/fold">Debit Card</Link>
+          <Link to="/fold">Compare Plans</Link>
+          <Link to="/fold">Support</Link>
+          <Link to="/fold">Get The App</Link>
         </FoldNavLinks>
       </FoldNav>
       <FoldContainer>
         <FoldHeader>
-          <img src={VisaFold} className="fold-visa" />
+          <img src={VisaFold} className="fold-visa" alt="visa fold" />
           <h1 className="top-header">Earn Bitcoin On</h1>
           <h1 className="bottom-header">Everything</h1>
-          <img src={FoldCard} />
+          <img src={FoldCard} alt="fold card" />
           <video
             class="spin-phone"
             autoplay=""
