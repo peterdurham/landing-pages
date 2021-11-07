@@ -5,6 +5,7 @@ import styled from "styled-components";
 import logo from "./logo.svg";
 import "./App.css";
 import Fold from "./pages/fold";
+import Strike from "./pages/strike";
 
 import Menu from "./components/menu";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<CreateReactApp />} />
           <Route path="/create-react-app" element={<CreateReactApp />} />
           <Route path="/fold" element={<Fold />} />
+          <Route path="/strike" element={<Strike />} />
         </Routes>
       </AppStyles>
     </Router>

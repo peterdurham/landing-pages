@@ -33,6 +33,9 @@ const Menu = () => {
           <li>
             <Link to="/fold">Fold</Link>
           </li>
+          <li>
+            <Link to="/strike">Strike</Link>
+          </li>
         </ul>
       </nav>
     </MenuStyles>
