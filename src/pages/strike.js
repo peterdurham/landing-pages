@@ -604,7 +604,7 @@ const Strike = () => {
               class="sc-bdfBQB kKKYea"
             >
               <source
-                src="/static/buy-bitcoin-e3c6d35b138670c80e960e9d5ea1d2e5.mp4"
+                src="https://strike.me/static/pay-f4157242f168db73e65cdbde05eafbaf.mp4"
                 type="video/mp4"
               />
             </video>
