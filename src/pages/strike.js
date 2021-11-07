@@ -249,7 +249,11 @@ const SectionThree = styled.div`
 const Strike = () => {
   return (
     <StrikeBackgroundStyles>
-      <img src={StrikeBackground} id="strike-background" />
+      <img
+        src={StrikeBackground}
+        id="strike-background"
+        alt="strike-background"
+      />
       <StrikeContainer>
         <StrikeNav>
           <StrikeLogo style={{ cursor: "pointer" }} />
