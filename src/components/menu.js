@@ -4,10 +4,20 @@ import { Link } from "react-router-dom";
 
 const MenuStyles = styled.div`
   position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
   top: 20px;
   right: 20px;
   border: 1px solid grey;
   color: grey;
+  z-index: 10000;
+
+  & button {
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: #fff;
+  }
 
   & ul {
     list-style: none;
@@ -20,24 +30,24 @@ const MenuStyles = styled.div`
 `;
 
 const Menu = () => {
+  const [menuOpen, setMenuOpen] = React.useState(true);
+
   return (
     <MenuStyles>
-      <nav>
+      {menuOpen ? (<nav>
+        <button onClick={() => setMenuOpen(false)}>X</button>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/create-react-app">Create React App</Link>
-          </li>
           <li>
             <Link to="/fold">Fold</Link>
           </li>
           <li>
             <Link to="/strike">Strike</Link>
           </li>
+          <li>
+            <Link to="/stripe">Stripe</Link>
+          </li>
         </ul>
-      </nav>
+      </nav>) : <button onClick={() => setMenuOpen(true)}> OPEN </button>}
     </MenuStyles>
   );
 };
