@@ -14,6 +14,11 @@ const Stripe = () => {
                 </ul>
                 <a>Sign In</a>
             </div>
+            <div>
+                <h1>
+                    Payments infrastructure for the internet
+                </h1>
+            </div>
         </div>
     )
 }
