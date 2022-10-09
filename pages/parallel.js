@@ -1,11 +1,15 @@
 import styled from 'styled-components'
 
-import { Button } from '../stories/parallel/Button'
+import { Button } from '../components/parallel/Button/Button'
+import { Navbar } from '../components/parallel/Navbar/Navbar'
 
 const ParallelWrapper = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Michroma&family=Work+Sans:wght@400;500;700&display=swap');
 
   button {
+    font-family: 'Work Sans', sans-serif;
+  }
+  a {
     font-family: 'Work Sans', sans-serif;
   }
 
@@ -20,9 +24,8 @@ const ParallelWrapper = styled.div`
 const Parallel = () => {
   return (
     <ParallelWrapper>
+      <Navbar />
       <h1>Default</h1>
-      <h1 className="michroma">Michroma</h1>
-      <h1 className="work-sans">Work Sans</h1>
       <Button label="Sign up Free"></Button>
     </ParallelWrapper>
   )
